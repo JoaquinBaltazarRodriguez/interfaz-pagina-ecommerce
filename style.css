@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'josefin';
-    src: url(/Fonts/static/JosefinSans-Regular.ttf);
+    src: url(Fonts/static/JosefinSans-Regular.ttf);
 }
 
 @font-face {
     font-family: 'poppins-header';
-    src: url(/Fonts/Poppins-ExtraBoldItalic.ttf);
+    src: url(Fonts/Poppins-ExtraBoldItalic.ttf);
 }
 
 @font-face {
     font-family: 'poppins-tittle';
-    src: url(/Fonts/Poppins-BlackItalic.ttf);
+    src: url(Fonts/Poppins-BlackItalic.ttf);
 }
 
 * {
