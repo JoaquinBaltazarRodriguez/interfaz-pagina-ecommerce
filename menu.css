@@ -1,0 +1,433 @@
+@font-face {
+    font-family: 'josefin';
+    src: url(/Fonts/static/JosefinSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'poppins-header';
+    src: url(/Fonts/Poppins-ExtraBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: 'poppins-tittle';
+    src: url(/Fonts/Poppins-BlackItalic.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Start header section */
+
+.head {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    background-color: #090e2b;
+}
+
+@media(min-width: 1920px) {
+    .navegation {
+        padding: 0em 0em 0em 0.5em;
+    }
+    .navegation a {
+        margin: 0em 1.2em 0em 2.1em;
+    }
+}
+
+.personal-contact {
+    background: #090e2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.whatsapp-contact {
+    font-size: 1.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 35px;
+    text-decoration: none;
+    font-family: 'josefin';
+}
+
+.personal-contact img {
+    margin: 0px 11px 0px 13px;
+}
+
+.whatsapp-contact:hover {
+    border-bottom: 2.5px solid #0ef;
+}
+
+.headboard {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.header-logo {
+    width: 196px; 
+    height: 110px;
+    max-height: 100%;
+    margin: 10px;
+    padding-top: 10px;
+}
+
+.company-name {
+    font-family: 'poppins-tittle';
+    font-size: 1.7em;
+    margin: 10px 0px 0px 2px;
+    padding-right: 45px;
+    justify-content: center;
+    color: rgb(253, 253, 253);
+    border-right: 2px solid;
+    border-radius: 4px;
+    border-color: #0ef;
+}
+
+.icon {
+    float: right;
+    display: flex;
+    align-items: center;
+    margin: 0em 0em 0em 3.5em;
+}
+
+.navegation {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0em 0em 0em 5.5em;
+    font-family: 'josefin';
+}
+
+.navbar {
+    position: relative;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0px 5px 0px 5px;
+    padding: 6px 25px;
+    transition: .5s;
+}
+
+.navbar:hover {
+    color:rgb(192, 251, 255);
+}
+
+.navbar span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2.5px solid rgb(120, 246, 255);
+    border-radius: 15px;
+    transform: scale(0) translateY(50px);
+    transition: .5s;
+}
+
+.navbar:hover span {
+    transform: scale(1) translateY(0);
+}
+
+/* End header section */
+
+/* Start main section */
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #c4dddf;
+}
+
+.local-time {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background: rgba(9,14,43,1);
+    font-size: 1.2em;
+    font-family: 'josefin';
+}
+
+.slogan {
+    padding: 3em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: 'poppins-tittle';
+    font-size: 1.5em;
+    border-bottom: solid;
+}
+
+.container-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-image img {
+    width: 50vw;
+    height: 530px;
+}
+
+.catalogue-tittle {
+    display: flex;
+    justify-content: center;
+    margin-top: 3.1em;
+    font-family: 'poppins-header';
+    font-size: 2.1em;
+    padding-left: 2em;
+}
+
+.catalogue i:hover {
+    transform: scale(1.1);
+}
+
+.catalogue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+    font-size: 1.4em;
+    font-family: 'poppins-header';
+    padding-right: 3em;
+}
+
+.catalogue-item {
+    text-align: center;
+    margin: 0em 2em 0em 3em;
+}
+
+.catalogue-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.catalogue-item i {
+    margin: 0.1em;
+    font-size: 2.3em;
+    border: 2px solid;
+    border-radius: 50%;
+    padding: 0.2em; 
+    display: inline-block;
+}
+
+.catalogue-item h5 {
+    margin: 0.3em;
+    font-size: 0.7em;
+}
+
+.offer-tittle {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 5em;
+    color: white;
+    background: #090e2b;
+    height: 4em;
+    font-family: 'poppins-header';
+    border-bottom: 2.5px solid #0ef;
+}
+
+.offers {
+    display: flex;
+    justify-content: center;
+    background: #090e2b;
+    font-family: 'poppins-header';
+    flex-wrap: wrap;
+}
+
+.offers h5 {
+    color: white;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.offers-item {
+    margin: 2.5em;
+}
+
+.offers-item:hover {
+    transform: scale(1.1) translateY(10px);
+    transition: .5s;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 6.5em 0em 0em 0em;
+    box-sizing: border-box;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #bdd0d1;
+    border-radius: 5%;
+}
+
+.shopp {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 1.3em;
+}
+
+.shopp h5 {
+    font-size: 1.1em;
+    font-family: 'poppins-header';
+}
+
+.shopp a {
+    text-decoration: none;
+    color: #000;
+}
+
+.shopp i {
+    margin-left: 0.7em;
+}
+
+
+.product {
+    margin: 2.9em;
+    margin-top: 5em;
+    transition: transform 0.3s ease;
+}
+
+.product img {
+    border-radius: 6% 0% 6% 0%;
+}
+
+.product:hover {
+    transform: scale(0.9);
+}
+
+.see-everything {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.see-everything p {
+    font-family: 'poppins-tittle';
+    font-size: 1.5em;
+    background-color: #090e2b;
+    width: 250px;
+    height: 2.5em;
+    color: #ffffff;
+    border-radius: 0% 0% 85% 85%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.see-everything a {
+    text-decoration: none;
+}
+
+/* End start section */
+
+/* Start Footer section */
+
+footer {
+    width: 100vw;
+    background-color: #000;
+    color: white;
+    margin-top: 6em;
+    font-family: 'josefin';
+}
+
+.attention-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.3em;
+    padding-top: 1em;
+    border-bottom: #0ef solid;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-group {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 2em 0em 0em 2em;
+    align-items: center;
+}
+
+.footer-group li {
+    font-size: 1.3em;
+    margin-top: 0.7em;
+}
+
+.footer-group a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-nav li:hover {
+    color: #0ef;
+}
+
+.social-contacts i {
+    display: flex;
+    margin: 0.9em 0em 0em 0em;
+    font-size: 0.9em;
+    color: white;
+}
+
+.contact-us i:hover {
+    color: #0ef;
+}
+
+.politics h4 {
+    color: white;
+    margin-top: 2em;
+}
+
+.politics h4:hover {
+    color: #0ef;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    border-top: 2px #0ef solid;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1.8em;
+}
+
+.copyright i {
+    font-size: 0.9em;
+}
+
+.copyright p {
+    margin-left: 1em;
+}
+
+/* End footer section */
